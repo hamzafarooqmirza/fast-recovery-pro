@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { IMG, PHONE, PHONE_DISPLAY, WHATSAPP, EMAIL, ADDRESS, BRAND } from "@/lib/assets";
 import { SERVICES } from "@/lib/services";
-import { Phone, Mail, MapPin, MessageCircle, Heart } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 export function Footer() {
   return (
@@ -9,13 +9,13 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
         <div className="space-y-4">
           <img src={IMG.logo} alt={`${BRAND} logo`} className="h-14 w-auto" />
-          <p className="text-sm text-muted-foreground">The UAE's trusted 24/7 roadside assistance, vehicle recovery and transport specialists.</p>
+          <p className="text-sm text-muted-foreground">Bristol's trusted 24/7 roadside assistance, vehicle recovery and transport specialists serving Bristol and surrounding areas.</p>
         </div>
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">Services</h3>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             {SERVICES.slice(0, 6).map((s) => (
-              <li key={s.slug}><Link to={s.slug} className="hover:text-primary">{s.title.split(" (")[0]}</Link></li>
+              <li key={s.slug}><Link to="/services" className="hover:text-primary">{s.title}</Link></li>
             ))}
             <li><Link to="/services" className="font-semibold text-primary hover:underline">View all services →</Link></li>
           </ul>
@@ -41,11 +41,9 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-border/60 px-4 py-6 flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
-        Design with <Heart className="h-3.5 w-3.5 fill-primary text-primary" /> by{" "}
-        <a href="https://linkedo.co.uk/" target="_blank" rel="noopener noreferrer nofollow" className="font-semibold text-primary hover:underline">
-          Linkedo
-        </a>
+      <div className="border-t border-border/60 px-4 py-6 flex flex-col items-center gap-1.5 text-xs text-muted-foreground text-center">
+        <span>&copy; {new Date().getFullYear()} D &amp; L Recovery. All rights reserved.</span>
+        <span>24/7 vehicle recovery and towing service in Bristol and surrounding areas.</span>
       </div>
     </footer>
   );

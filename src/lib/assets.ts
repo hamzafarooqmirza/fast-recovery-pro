@@ -13,7 +13,6 @@ export const IMG = {
   recoveryToMechanic: "/images/recovery-to-mechanic.webp",
   recoveryToDealership: "/images/recovery-to-dealership.webp",
   luxuryExoticCarTowing: "/images/luxury-exotic-car-towing.webp",
-  desertOffroadRecovery: "/images/desert-offroad-recovery.webp",
   heavyDutyTruckTowing: "/images/heavy-duty-truck-towing.webp",
   commercialVehicleTowing: "/images/commercial-vehicle-towing.webp",
   roadsideAssistance: "/images/roadside-assistance.webp",
@@ -21,9 +20,9 @@ export const IMG = {
   carAndTowingVan: "/images/car-and-towing-van.webp",
 };
 
-export const PHONE = "+971509495250";
-export const PHONE_DISPLAY = "050 9495250";
-export const WHATSAPP = "https://wa.me/971509495250";
-export const EMAIL = "Amirbahi3828@gmail.com";
-export const ADDRESS = "Abu Dhabi, UAE";
-export const BRAND = "Fast Recovery Pro";
+export const PHONE = "+447511659806";
+export const PHONE_DISPLAY = "07511 659806";
+export const WHATSAPP = "https://wa.me/447511659806";
+export const EMAIL = "info@dlrecovery.co.uk";
+export const ADDRESS = "Bristol and surrounding areas";
+export const BRAND = "D & L Recovery";
