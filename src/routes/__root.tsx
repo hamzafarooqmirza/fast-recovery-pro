@@ -77,16 +77,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Fast Recovery Pro — 24/7 Roadside Assistance UAE" },
-      { name: "description", content: "24/7 emergency roadside assistance, vehicle recovery, jump start, battery replacement, mobile tyre service and secure vehicle storage across the UAE." },
-      { name: "theme-color", content: "#0a0a14" },
+      { title: "D & L Recovery — 24/7 Roadside Assistance Bristol" },
+      { name: "description", content: "24/7 emergency roadside assistance, vehicle recovery, towing, accident recovery and specialist vehicle transport across Bristol and surrounding areas." },
+      { name: "theme-color", content: "#0a0000" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Fast Recovery Pro" },
+      { property: "og:site_name", content: "D & L Recovery" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "Fast Recovery Pro — 24/7 Roadside Assistance UAE" },
-      { name: "twitter:title", content: "Fast Recovery Pro — 24/7 Roadside Assistance UAE" },
-      { property: "og:description", content: "24/7 emergency roadside assistance, vehicle recovery, jump start, battery replacement, mobile tyre service and secure vehicle storage across the UAE." },
-      { name: "twitter:description", content: "24/7 emergency roadside assistance, vehicle recovery, jump start, battery replacement, mobile tyre service and secure vehicle storage across the UAE." },
+      { property: "og:title", content: "D & L Recovery — 24/7 Roadside Assistance Bristol" },
+      { name: "twitter:title", content: "D & L Recovery — 24/7 Roadside Assistance Bristol" },
+      { property: "og:description", content: "24/7 emergency roadside assistance, vehicle recovery, towing, accident recovery and specialist vehicle transport across Bristol and surrounding areas." },
+      { name: "twitter:description", content: "24/7 emergency roadside assistance, vehicle recovery, towing, accident recovery and specialist vehicle transport across Bristol and surrounding areas." },
       { property: "og:image", content: "/og-image.webp" },
       { name: "twitter:image", content: "/og-image.webp" },
     ],
@@ -104,22 +104,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "AutomotiveBusiness",
-          name: "Fast Recovery Pro",
-          telephone: "+971509495250",
-          areaServed: "AE",
-          address: { "@type": "PostalAddress", addressCountry: "AE", addressLocality: "Abu Dhabi" },
+          name: "D & L Recovery",
+          telephone: "+447511659806",
+          areaServed: "Bristol and surrounding areas",
+          address: { "@type": "PostalAddress", addressCountry: "GB", addressLocality: "Bristol" },
           openingHours: "Mo-Su 00:00-23:59",
         }),
-      },
-      {
-        src: "https://www.googletagmanager.com/gtag/js?id=AW-18338363085",
-        async: true,
-      },
-      {
-        children: `window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'AW-18338363085');`,
       },
     ],
   }),
@@ -129,36 +119,13 @@ gtag('config', 'AW-18338363085');`,
   errorComponent: ErrorComponent,
 });
 
-const GTM_ID = "GTM-NWZQVH65";
-
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* Google Tag Manager */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','${GTM_ID}');`,
-          }}
-        />
-        {/* End Google Tag Manager */}
         <HeadContent />
       </head>
       <body>
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
-        {/* End Google Tag Manager (noscript) */}
         {children}
         <Scripts />
       </body>

@@ -9,59 +9,20 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as VehicleTowingServiceRouteImport } from './routes/vehicle-towing-service'
-import { Route as VehicleStorageRouteImport } from './routes/vehicle-storage'
-import { Route as VehicleRecoveryRouteImport } from './routes/vehicle-recovery'
 import { Route as TermsRouteImport } from './routes/terms'
-import { Route as Suv4x4RecoveryRouteImport } from './routes/suv-4x4-recovery'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ServiceAreasRouteImport } from './routes/service-areas'
-import { Route as RecoveryToMechanicRouteImport } from './routes/recovery-to-mechanic'
-import { Route as RecoveryToGarageRouteImport } from './routes/recovery-to-garage'
-import { Route as RecoveryToDealershipRouteImport } from './routes/recovery-to-dealership'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
-import { Route as MobileTyreServiceRouteImport } from './routes/mobile-tyre-service'
-import { Route as LuxurySportsCarTransportRouteImport } from './routes/luxury-sports-car-transport'
-import { Route as LuxuryExoticCarTowingRouteImport } from './routes/luxury-exotic-car-towing'
-import { Route as JumpStartRouteImport } from './routes/jump-start'
-import { Route as HeavyDutyTruckTowingRouteImport } from './routes/heavy-duty-truck-towing'
 import { Route as GalleryRouteImport } from './routes/gallery'
-import { Route as FlatbedTowingRouteImport } from './routes/flatbed-towing'
 import { Route as FaqsRouteImport } from './routes/faqs'
-import { Route as EmergencyCarRecoveryRouteImport } from './routes/emergency-car-recovery'
-import { Route as DesertOffroadRecoveryRouteImport } from './routes/desert-offroad-recovery'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CommercialVehicleTowingRouteImport } from './routes/commercial-vehicle-towing'
-import { Route as BreakdownRecoveryRouteImport } from './routes/breakdown-recovery'
-import { Route as BatteryReplacementRouteImport } from './routes/battery-replacement'
-import { Route as AccidentRecoveryRouteImport } from './routes/accident-recovery'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
-const VehicleTowingServiceRoute = VehicleTowingServiceRouteImport.update({
-  id: '/vehicle-towing-service',
-  path: '/vehicle-towing-service',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const VehicleStorageRoute = VehicleStorageRouteImport.update({
-  id: '/vehicle-storage',
-  path: '/vehicle-storage',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const VehicleRecoveryRoute = VehicleRecoveryRouteImport.update({
-  id: '/vehicle-recovery',
-  path: '/vehicle-recovery',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Suv4x4RecoveryRoute = Suv4x4RecoveryRouteImport.update({
-  id: '/suv-4x4-recovery',
-  path: '/suv-4x4-recovery',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -79,50 +40,9 @@ const ServiceAreasRoute = ServiceAreasRouteImport.update({
   path: '/service-areas',
   getParentRoute: () => rootRouteImport,
 } as any)
-const RecoveryToMechanicRoute = RecoveryToMechanicRouteImport.update({
-  id: '/recovery-to-mechanic',
-  path: '/recovery-to-mechanic',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RecoveryToGarageRoute = RecoveryToGarageRouteImport.update({
-  id: '/recovery-to-garage',
-  path: '/recovery-to-garage',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RecoveryToDealershipRoute = RecoveryToDealershipRouteImport.update({
-  id: '/recovery-to-dealership',
-  path: '/recovery-to-dealership',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
   id: '/privacy-policy',
   path: '/privacy-policy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MobileTyreServiceRoute = MobileTyreServiceRouteImport.update({
-  id: '/mobile-tyre-service',
-  path: '/mobile-tyre-service',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LuxurySportsCarTransportRoute =
-  LuxurySportsCarTransportRouteImport.update({
-    id: '/luxury-sports-car-transport',
-    path: '/luxury-sports-car-transport',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const LuxuryExoticCarTowingRoute = LuxuryExoticCarTowingRouteImport.update({
-  id: '/luxury-exotic-car-towing',
-  path: '/luxury-exotic-car-towing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const JumpStartRoute = JumpStartRouteImport.update({
-  id: '/jump-start',
-  path: '/jump-start',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HeavyDutyTruckTowingRoute = HeavyDutyTruckTowingRouteImport.update({
-  id: '/heavy-duty-truck-towing',
-  path: '/heavy-duty-truck-towing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GalleryRoute = GalleryRouteImport.update({
@@ -130,49 +50,14 @@ const GalleryRoute = GalleryRouteImport.update({
   path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
-const FlatbedTowingRoute = FlatbedTowingRouteImport.update({
-  id: '/flatbed-towing',
-  path: '/flatbed-towing',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const FaqsRoute = FaqsRouteImport.update({
   id: '/faqs',
   path: '/faqs',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EmergencyCarRecoveryRoute = EmergencyCarRecoveryRouteImport.update({
-  id: '/emergency-car-recovery',
-  path: '/emergency-car-recovery',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DesertOffroadRecoveryRoute = DesertOffroadRecoveryRouteImport.update({
-  id: '/desert-offroad-recovery',
-  path: '/desert-offroad-recovery',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CommercialVehicleTowingRoute = CommercialVehicleTowingRouteImport.update({
-  id: '/commercial-vehicle-towing',
-  path: '/commercial-vehicle-towing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BreakdownRecoveryRoute = BreakdownRecoveryRouteImport.update({
-  id: '/breakdown-recovery',
-  path: '/breakdown-recovery',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BatteryReplacementRoute = BatteryReplacementRouteImport.update({
-  id: '/battery-replacement',
-  path: '/battery-replacement',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AccidentRecoveryRoute = AccidentRecoveryRouteImport.update({
-  id: '/accident-recovery',
-  path: '/accident-recovery',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -189,260 +74,99 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/accident-recovery': typeof AccidentRecoveryRoute
-  '/battery-replacement': typeof BatteryReplacementRoute
-  '/breakdown-recovery': typeof BreakdownRecoveryRoute
-  '/commercial-vehicle-towing': typeof CommercialVehicleTowingRoute
   '/contact': typeof ContactRoute
-  '/desert-offroad-recovery': typeof DesertOffroadRecoveryRoute
-  '/emergency-car-recovery': typeof EmergencyCarRecoveryRoute
   '/faqs': typeof FaqsRoute
-  '/flatbed-towing': typeof FlatbedTowingRoute
   '/gallery': typeof GalleryRoute
-  '/heavy-duty-truck-towing': typeof HeavyDutyTruckTowingRoute
-  '/jump-start': typeof JumpStartRoute
-  '/luxury-exotic-car-towing': typeof LuxuryExoticCarTowingRoute
-  '/luxury-sports-car-transport': typeof LuxurySportsCarTransportRoute
-  '/mobile-tyre-service': typeof MobileTyreServiceRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/recovery-to-dealership': typeof RecoveryToDealershipRoute
-  '/recovery-to-garage': typeof RecoveryToGarageRoute
-  '/recovery-to-mechanic': typeof RecoveryToMechanicRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/suv-4x4-recovery': typeof Suv4x4RecoveryRoute
   '/terms': typeof TermsRoute
-  '/vehicle-recovery': typeof VehicleRecoveryRoute
-  '/vehicle-storage': typeof VehicleStorageRoute
-  '/vehicle-towing-service': typeof VehicleTowingServiceRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/accident-recovery': typeof AccidentRecoveryRoute
-  '/battery-replacement': typeof BatteryReplacementRoute
-  '/breakdown-recovery': typeof BreakdownRecoveryRoute
-  '/commercial-vehicle-towing': typeof CommercialVehicleTowingRoute
   '/contact': typeof ContactRoute
-  '/desert-offroad-recovery': typeof DesertOffroadRecoveryRoute
-  '/emergency-car-recovery': typeof EmergencyCarRecoveryRoute
   '/faqs': typeof FaqsRoute
-  '/flatbed-towing': typeof FlatbedTowingRoute
   '/gallery': typeof GalleryRoute
-  '/heavy-duty-truck-towing': typeof HeavyDutyTruckTowingRoute
-  '/jump-start': typeof JumpStartRoute
-  '/luxury-exotic-car-towing': typeof LuxuryExoticCarTowingRoute
-  '/luxury-sports-car-transport': typeof LuxurySportsCarTransportRoute
-  '/mobile-tyre-service': typeof MobileTyreServiceRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/recovery-to-dealership': typeof RecoveryToDealershipRoute
-  '/recovery-to-garage': typeof RecoveryToGarageRoute
-  '/recovery-to-mechanic': typeof RecoveryToMechanicRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/suv-4x4-recovery': typeof Suv4x4RecoveryRoute
   '/terms': typeof TermsRoute
-  '/vehicle-recovery': typeof VehicleRecoveryRoute
-  '/vehicle-storage': typeof VehicleStorageRoute
-  '/vehicle-towing-service': typeof VehicleTowingServiceRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/accident-recovery': typeof AccidentRecoveryRoute
-  '/battery-replacement': typeof BatteryReplacementRoute
-  '/breakdown-recovery': typeof BreakdownRecoveryRoute
-  '/commercial-vehicle-towing': typeof CommercialVehicleTowingRoute
   '/contact': typeof ContactRoute
-  '/desert-offroad-recovery': typeof DesertOffroadRecoveryRoute
-  '/emergency-car-recovery': typeof EmergencyCarRecoveryRoute
   '/faqs': typeof FaqsRoute
-  '/flatbed-towing': typeof FlatbedTowingRoute
   '/gallery': typeof GalleryRoute
-  '/heavy-duty-truck-towing': typeof HeavyDutyTruckTowingRoute
-  '/jump-start': typeof JumpStartRoute
-  '/luxury-exotic-car-towing': typeof LuxuryExoticCarTowingRoute
-  '/luxury-sports-car-transport': typeof LuxurySportsCarTransportRoute
-  '/mobile-tyre-service': typeof MobileTyreServiceRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
-  '/recovery-to-dealership': typeof RecoveryToDealershipRoute
-  '/recovery-to-garage': typeof RecoveryToGarageRoute
-  '/recovery-to-mechanic': typeof RecoveryToMechanicRoute
   '/service-areas': typeof ServiceAreasRoute
   '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/suv-4x4-recovery': typeof Suv4x4RecoveryRoute
   '/terms': typeof TermsRoute
-  '/vehicle-recovery': typeof VehicleRecoveryRoute
-  '/vehicle-storage': typeof VehicleStorageRoute
-  '/vehicle-towing-service': typeof VehicleTowingServiceRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/about'
-    | '/accident-recovery'
-    | '/battery-replacement'
-    | '/breakdown-recovery'
-    | '/commercial-vehicle-towing'
     | '/contact'
-    | '/desert-offroad-recovery'
-    | '/emergency-car-recovery'
     | '/faqs'
-    | '/flatbed-towing'
     | '/gallery'
-    | '/heavy-duty-truck-towing'
-    | '/jump-start'
-    | '/luxury-exotic-car-towing'
-    | '/luxury-sports-car-transport'
-    | '/mobile-tyre-service'
     | '/privacy-policy'
-    | '/recovery-to-dealership'
-    | '/recovery-to-garage'
-    | '/recovery-to-mechanic'
     | '/service-areas'
     | '/services'
     | '/sitemap.xml'
-    | '/suv-4x4-recovery'
     | '/terms'
-    | '/vehicle-recovery'
-    | '/vehicle-storage'
-    | '/vehicle-towing-service'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
-    | '/accident-recovery'
-    | '/battery-replacement'
-    | '/breakdown-recovery'
-    | '/commercial-vehicle-towing'
     | '/contact'
-    | '/desert-offroad-recovery'
-    | '/emergency-car-recovery'
     | '/faqs'
-    | '/flatbed-towing'
     | '/gallery'
-    | '/heavy-duty-truck-towing'
-    | '/jump-start'
-    | '/luxury-exotic-car-towing'
-    | '/luxury-sports-car-transport'
-    | '/mobile-tyre-service'
     | '/privacy-policy'
-    | '/recovery-to-dealership'
-    | '/recovery-to-garage'
-    | '/recovery-to-mechanic'
     | '/service-areas'
     | '/services'
     | '/sitemap.xml'
-    | '/suv-4x4-recovery'
     | '/terms'
-    | '/vehicle-recovery'
-    | '/vehicle-storage'
-    | '/vehicle-towing-service'
   id:
     | '__root__'
     | '/'
     | '/about'
-    | '/accident-recovery'
-    | '/battery-replacement'
-    | '/breakdown-recovery'
-    | '/commercial-vehicle-towing'
     | '/contact'
-    | '/desert-offroad-recovery'
-    | '/emergency-car-recovery'
     | '/faqs'
-    | '/flatbed-towing'
     | '/gallery'
-    | '/heavy-duty-truck-towing'
-    | '/jump-start'
-    | '/luxury-exotic-car-towing'
-    | '/luxury-sports-car-transport'
-    | '/mobile-tyre-service'
     | '/privacy-policy'
-    | '/recovery-to-dealership'
-    | '/recovery-to-garage'
-    | '/recovery-to-mechanic'
     | '/service-areas'
     | '/services'
     | '/sitemap.xml'
-    | '/suv-4x4-recovery'
     | '/terms'
-    | '/vehicle-recovery'
-    | '/vehicle-storage'
-    | '/vehicle-towing-service'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  AccidentRecoveryRoute: typeof AccidentRecoveryRoute
-  BatteryReplacementRoute: typeof BatteryReplacementRoute
-  BreakdownRecoveryRoute: typeof BreakdownRecoveryRoute
-  CommercialVehicleTowingRoute: typeof CommercialVehicleTowingRoute
   ContactRoute: typeof ContactRoute
-  DesertOffroadRecoveryRoute: typeof DesertOffroadRecoveryRoute
-  EmergencyCarRecoveryRoute: typeof EmergencyCarRecoveryRoute
   FaqsRoute: typeof FaqsRoute
-  FlatbedTowingRoute: typeof FlatbedTowingRoute
   GalleryRoute: typeof GalleryRoute
-  HeavyDutyTruckTowingRoute: typeof HeavyDutyTruckTowingRoute
-  JumpStartRoute: typeof JumpStartRoute
-  LuxuryExoticCarTowingRoute: typeof LuxuryExoticCarTowingRoute
-  LuxurySportsCarTransportRoute: typeof LuxurySportsCarTransportRoute
-  MobileTyreServiceRoute: typeof MobileTyreServiceRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
-  RecoveryToDealershipRoute: typeof RecoveryToDealershipRoute
-  RecoveryToGarageRoute: typeof RecoveryToGarageRoute
-  RecoveryToMechanicRoute: typeof RecoveryToMechanicRoute
   ServiceAreasRoute: typeof ServiceAreasRoute
   ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
-  Suv4x4RecoveryRoute: typeof Suv4x4RecoveryRoute
   TermsRoute: typeof TermsRoute
-  VehicleRecoveryRoute: typeof VehicleRecoveryRoute
-  VehicleStorageRoute: typeof VehicleStorageRoute
-  VehicleTowingServiceRoute: typeof VehicleTowingServiceRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/vehicle-towing-service': {
-      id: '/vehicle-towing-service'
-      path: '/vehicle-towing-service'
-      fullPath: '/vehicle-towing-service'
-      preLoaderRoute: typeof VehicleTowingServiceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/vehicle-storage': {
-      id: '/vehicle-storage'
-      path: '/vehicle-storage'
-      fullPath: '/vehicle-storage'
-      preLoaderRoute: typeof VehicleStorageRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/vehicle-recovery': {
-      id: '/vehicle-recovery'
-      path: '/vehicle-recovery'
-      fullPath: '/vehicle-recovery'
-      preLoaderRoute: typeof VehicleRecoveryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/terms': {
       id: '/terms'
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/suv-4x4-recovery': {
-      id: '/suv-4x4-recovery'
-      path: '/suv-4x4-recovery'
-      fullPath: '/suv-4x4-recovery'
-      preLoaderRoute: typeof Suv4x4RecoveryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -466,67 +190,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiceAreasRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/recovery-to-mechanic': {
-      id: '/recovery-to-mechanic'
-      path: '/recovery-to-mechanic'
-      fullPath: '/recovery-to-mechanic'
-      preLoaderRoute: typeof RecoveryToMechanicRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/recovery-to-garage': {
-      id: '/recovery-to-garage'
-      path: '/recovery-to-garage'
-      fullPath: '/recovery-to-garage'
-      preLoaderRoute: typeof RecoveryToGarageRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/recovery-to-dealership': {
-      id: '/recovery-to-dealership'
-      path: '/recovery-to-dealership'
-      fullPath: '/recovery-to-dealership'
-      preLoaderRoute: typeof RecoveryToDealershipRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/privacy-policy': {
       id: '/privacy-policy'
       path: '/privacy-policy'
       fullPath: '/privacy-policy'
       preLoaderRoute: typeof PrivacyPolicyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/mobile-tyre-service': {
-      id: '/mobile-tyre-service'
-      path: '/mobile-tyre-service'
-      fullPath: '/mobile-tyre-service'
-      preLoaderRoute: typeof MobileTyreServiceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/luxury-sports-car-transport': {
-      id: '/luxury-sports-car-transport'
-      path: '/luxury-sports-car-transport'
-      fullPath: '/luxury-sports-car-transport'
-      preLoaderRoute: typeof LuxurySportsCarTransportRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/luxury-exotic-car-towing': {
-      id: '/luxury-exotic-car-towing'
-      path: '/luxury-exotic-car-towing'
-      fullPath: '/luxury-exotic-car-towing'
-      preLoaderRoute: typeof LuxuryExoticCarTowingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/jump-start': {
-      id: '/jump-start'
-      path: '/jump-start'
-      fullPath: '/jump-start'
-      preLoaderRoute: typeof JumpStartRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/heavy-duty-truck-towing': {
-      id: '/heavy-duty-truck-towing'
-      path: '/heavy-duty-truck-towing'
-      fullPath: '/heavy-duty-truck-towing'
-      preLoaderRoute: typeof HeavyDutyTruckTowingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gallery': {
@@ -536,13 +204,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/flatbed-towing': {
-      id: '/flatbed-towing'
-      path: '/flatbed-towing'
-      fullPath: '/flatbed-towing'
-      preLoaderRoute: typeof FlatbedTowingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/faqs': {
       id: '/faqs'
       path: '/faqs'
@@ -550,53 +211,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaqsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/emergency-car-recovery': {
-      id: '/emergency-car-recovery'
-      path: '/emergency-car-recovery'
-      fullPath: '/emergency-car-recovery'
-      preLoaderRoute: typeof EmergencyCarRecoveryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/desert-offroad-recovery': {
-      id: '/desert-offroad-recovery'
-      path: '/desert-offroad-recovery'
-      fullPath: '/desert-offroad-recovery'
-      preLoaderRoute: typeof DesertOffroadRecoveryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/contact': {
       id: '/contact'
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/commercial-vehicle-towing': {
-      id: '/commercial-vehicle-towing'
-      path: '/commercial-vehicle-towing'
-      fullPath: '/commercial-vehicle-towing'
-      preLoaderRoute: typeof CommercialVehicleTowingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/breakdown-recovery': {
-      id: '/breakdown-recovery'
-      path: '/breakdown-recovery'
-      fullPath: '/breakdown-recovery'
-      preLoaderRoute: typeof BreakdownRecoveryRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/battery-replacement': {
-      id: '/battery-replacement'
-      path: '/battery-replacement'
-      fullPath: '/battery-replacement'
-      preLoaderRoute: typeof BatteryReplacementRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/accident-recovery': {
-      id: '/accident-recovery'
-      path: '/accident-recovery'
-      fullPath: '/accident-recovery'
-      preLoaderRoute: typeof AccidentRecoveryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -619,33 +238,14 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  AccidentRecoveryRoute: AccidentRecoveryRoute,
-  BatteryReplacementRoute: BatteryReplacementRoute,
-  BreakdownRecoveryRoute: BreakdownRecoveryRoute,
-  CommercialVehicleTowingRoute: CommercialVehicleTowingRoute,
   ContactRoute: ContactRoute,
-  DesertOffroadRecoveryRoute: DesertOffroadRecoveryRoute,
-  EmergencyCarRecoveryRoute: EmergencyCarRecoveryRoute,
   FaqsRoute: FaqsRoute,
-  FlatbedTowingRoute: FlatbedTowingRoute,
   GalleryRoute: GalleryRoute,
-  HeavyDutyTruckTowingRoute: HeavyDutyTruckTowingRoute,
-  JumpStartRoute: JumpStartRoute,
-  LuxuryExoticCarTowingRoute: LuxuryExoticCarTowingRoute,
-  LuxurySportsCarTransportRoute: LuxurySportsCarTransportRoute,
-  MobileTyreServiceRoute: MobileTyreServiceRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
-  RecoveryToDealershipRoute: RecoveryToDealershipRoute,
-  RecoveryToGarageRoute: RecoveryToGarageRoute,
-  RecoveryToMechanicRoute: RecoveryToMechanicRoute,
   ServiceAreasRoute: ServiceAreasRoute,
   ServicesRoute: ServicesRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
-  Suv4x4RecoveryRoute: Suv4x4RecoveryRoute,
   TermsRoute: TermsRoute,
-  VehicleRecoveryRoute: VehicleRecoveryRoute,
-  VehicleStorageRoute: VehicleStorageRoute,
-  VehicleTowingServiceRoute: VehicleTowingServiceRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
